@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/env", {
+        "targets": {
+          "browsers": [
+            "last 2 versions"
+          ]
+        },
+        "loose": true
+      }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    "transform-async-to-promises"
+  ]
+}
